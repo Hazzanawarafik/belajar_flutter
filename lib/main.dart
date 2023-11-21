@@ -31,41 +31,32 @@ class _MyAppState extends State<MyApp> {
             })
           ],
         ),
-        body: ListView(
-          children: <Widget>[
-            Center(
-                child: Text(
-              'Hazza Nawarafi Khairullah',
-              style: TextStyle(fontSize: 20),
-            )),
-            Text(
-              'Deskripsi Project',
-              style: TextStyle(fontStyle: FontStyle.italic, fontSize: 40),
-            ),
-            Text(
-              'Project Besar',
-              style: TextStyle(
-                fontStyle: FontStyle.normal,
-                fontSize: 30,
-              ),
-            ),
-            Text(
-              'Disini Project',
-              style: TextStyle(
-                fontStyle: FontStyle.italic,
-                fontSize: 40,
-                decoration: TextDecoration.underline,
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: <Widget>[
+              Icon(
+                Icons.shopping_cart,
+                size: 50,
                 color: Colors.red,
               ),
-            ),
-            Text(
-              'Coba Style Text Lagi',
-              style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontStyle: FontStyle.italic,
-                  fontSize: 40),
-            ),
-          ],
+              Icon(
+                Icons.map,
+                size: 80,
+                color: Colors.yellow,
+              ),
+              Icon(
+                Icons.favorite,
+                size: 80,
+                color: Colors.green,
+              ),
+              Icon(
+                Icons.person,
+                size: 80,
+                color: Colors.blue,
+              ),
+            ],
+          ),
         ),
       ),
     );
