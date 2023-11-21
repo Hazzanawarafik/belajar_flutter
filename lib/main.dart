@@ -31,8 +31,41 @@ class _MyAppState extends State<MyApp> {
             })
           ],
         ),
-        body: Center(
-          child: Text('Hallo First Aplikasi'),
+        body: ListView(
+          children: <Widget>[
+            Center(
+                child: Text(
+              'Hazza Nawarafi Khairullah',
+              style: TextStyle(fontSize: 20),
+            )),
+            Text(
+              'Deskripsi Project',
+              style: TextStyle(fontStyle: FontStyle.italic, fontSize: 40),
+            ),
+            Text(
+              'Project Besar',
+              style: TextStyle(
+                fontStyle: FontStyle.normal,
+                fontSize: 30,
+              ),
+            ),
+            Text(
+              'Disini Project',
+              style: TextStyle(
+                fontStyle: FontStyle.italic,
+                fontSize: 40,
+                decoration: TextDecoration.underline,
+                color: Colors.red,
+              ),
+            ),
+            Text(
+              'Coba Style Text Lagi',
+              style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontStyle: FontStyle.italic,
+                  fontSize: 40),
+            ),
+          ],
         ),
       ),
     );
