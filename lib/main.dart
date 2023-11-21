@@ -13,16 +13,26 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Padang Tekno',
-      debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.yellow,
         appBar: AppBar(
-          title: Text('Aplikasi Pertama'),
-          backgroundColor: Colors.red,
+          backgroundColor: Colors.green,
+          // elevation: 0.0,
+          leading: Icon(Icons.home),
+          title: Center(child: Text('Myapp')),
+          actions: <Widget>[
+            IconButton(onPressed: () {}, icon: Icon(Icons.attach_money)),
+            IconButton(onPressed: () {}, icon: Icon(Icons.shopping_cart)),
+            PopupMenuButton(itemBuilder: (BuildContext context) {
+              return [
+                PopupMenuItem(child: Text('Menu 1')),
+                PopupMenuItem(child: Text('Menu 1')),
+                PopupMenuItem(child: Text('Menu 1')),
+              ];
+            })
+          ],
         ),
         body: Center(
-          child: Text('Hello World'),
+          child: Text('Hallo First Aplikasi'),
         ),
       ),
     );
